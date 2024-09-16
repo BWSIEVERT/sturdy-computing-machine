@@ -90,8 +90,8 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -156,10 +156,11 @@ table {
 }
 
 .hu-inner-title-container {
-    width: 100%;
+    width: auto;
     height: auto;
 
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
     display: flex;
     justify-content: center;
@@ -175,16 +176,19 @@ table {
     font-size: 48px;
     text-transform: uppercase;
 
+    font-family: "Roboto Condensed", sans-serif;
+
 }
 
 .hu-inner-motto-container {
     width: 100%;
-    height: auto;
+    height: 10%;
 
     /* border: 1px solid black; */
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     padding-top: 1%;
@@ -195,6 +199,8 @@ table {
 
     font-size: 24px;
     text-transform: uppercase;
+
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .hu-inner-motto span {
@@ -204,4 +210,84 @@ table {
 
     text-decoration: underline;
 
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+button:hover {
+    background-color: #0056B3;
+}
+
+.data-section {
+    width: 100%;
+    height: auto;
+
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid black;
+}
+
+.data-display {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 1px solid red;
+}
+
+.dd-items {
+    width: 30%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    border: 1px solid black;
+
+    margin: 5%;
+}
+
+.dd-items-content {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    /* border: 1px solid red; */
+
+    padding-left: 1%;
+}
+
+.dd-items-content span {
+    font-size: 28px;
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* padding-right: 1%; */
+}
+
+.dd-items-content p {
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* padding-bottom: 2%; */
 }
